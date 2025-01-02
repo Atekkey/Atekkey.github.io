@@ -12,9 +12,10 @@ function App() {
       
       </section>
       <section class="section2">
+      Project 1
         <div class="container">
+          
           <div class="column"> {/* Left Column */}
-            Items
             <ul>
               <li><span> A </span></li>
               <li><span> A </span></li>

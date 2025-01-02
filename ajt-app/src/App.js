@@ -1,23 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
 
+// const textColor = "#E6E6E6";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <section class="section1">
+      Hello! My name is Anand Tekkey, and this is my Portfolio.
+      </section>
+      <section class="midsection1">
+      
+      </section>
+      <section class="section2">
+        <div class="container">
+          <div class="column"> {/* Left Column */}
+            Items
+            <ul>
+              <li><span> A </span></li>
+              <li><span> A </span></li>
+              <li><span> A </span></li>
+            </ul>
+
+
+          </div>
+
+          <div class="column">Pictures here</div>
+        </div>
+      
+      </section>
+
+      <section class="section3">
+      Third Part
+      </section>
+
+
     </div>
   );
 }

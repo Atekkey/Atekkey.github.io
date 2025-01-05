@@ -1,10 +1,12 @@
 .App {
   text-align: center;
+  color: #fafafa;
+  background-color: #1a1a1a;
+
 }
 
 
 body {
-  background-color: #2E2E3A;
   font-family: "Georgia", sans-serif;
   font-weight: 750;
 }
@@ -12,28 +14,27 @@ body {
 
 .section1 {
   padding-top: 35px;
-  background-color: #6184D8;
+  /* background-color: #6184D8; */
   height: 100%;
   font-family: "Georgia", sans-serif;
   
 
 }
 .midsection1 {
-  background: linear-gradient(#6184D8, #EE6C4D);
+  /* background: linear-gradient(#6184D8, #EE6C4D); */
   height: 100%;
   padding-top: 100px;
   font-family: "Georgia", sans-serif;
 }
 
 .section2 {
-  background-color: #EE6C4D;
+  /* background-color: grey; */
   height: 100%;
   font-family: "Georgia", sans-serif;
   padding-bottom: 35px;
 }
 .section3 {
   padding-top: 35px;
-  background-color: #2E2E3A;
   height: 100%;
   font-family: "Georgia", sans-serif;
   color: #E6E6E6 ;
@@ -42,22 +43,43 @@ body {
 .container {
   display: table;
   width: 100%;
+  padding-top: 20px;
 }
 .column {
   display: table-cell;
-  padding: 16px;
 }
-li span {
+.columnLeft {
+  display: table-cell;
+  padding-left: 16px;
+  text-align: left;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+.columnRight {
+  display: table-cell;
+  padding-right: 16px;
+  text-align: left;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.head1 {
+  font-size: 2.5em;
+  font-weight: 750;
+  padding-bottom: 20px;
+}
+
+/* li span {
   position: relative;
-
-
   bottom: 3px;
 }
 
 li::marker{
   font-size: 1.6em;
   line-height: 2.0;
-}
+} */
 
 
 

@@ -19,10 +19,14 @@ const Home = () => {
         </div>
         
         <div class="column">
-            <a href = "https://github.com/atekkey"> <img src= "PNGs/GH3.png" alt="github.com/atekkey" width = "100" height = "100"></img> </a>
+            <a href = "https://github.com/atekkey"> 
+              <img src= "PNGs/GH3.png" alt="github.com/atekkey" width = "100" height = "100"></img> 
+            </a>
           </div>
         <div class="column" >
-          <a href = "https://linkedin.com/in/atekkey"> <img src= "PNGs/LI.png" alt="linkedin.com/in/atekkey" width = "100" height = "100"></img> </a>
+          <a href = "https://linkedin.com/in/atekkey"> 
+            <img src= "PNGs/LI.png" alt="linkedin.com/in/atekkey" width = "100" height = "100"></img> 
+          </a>
           </div>
         </div>
 

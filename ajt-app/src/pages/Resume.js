@@ -6,8 +6,8 @@ const About = () => {
 
     <div className= "App">
         <embed
-        src={"AtekkeyResumeJan25.pdf"}
-        style={{ width: '100%', height: '500px', border: 'none' }}
+        src={"curResume.pdf"}
+        style={{ width: '100%', height: '900px', border: 'none' }}
         title="Resume"
       />
     </div>

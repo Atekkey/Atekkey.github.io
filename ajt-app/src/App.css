@@ -12,32 +12,18 @@ body {
 }
 
 
-.resumebox {
-  background-color: #fafafa;
-  color: #1a1a1a;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-}
-
-.link {
-  color: #1a1a1a;
-}
-
-
 .section1 {
   padding-top: 35px;
-  font-size: 1.6em;
+  /* background-color: #6184D8; */
   height: 100%;
   font-family: "Georgia", sans-serif;
-}
+  
 
+}
 .midsection1 {
   /* background: linear-gradient(#6184D8, #EE6C4D); */
   height: 100%;
-  padding-top: 30px;
+  padding-top: 100px;
   font-family: "Georgia", sans-serif;
 }
 
@@ -61,7 +47,6 @@ body {
 }
 .column {
   display: table-cell;
-  vertical-align: middle;
 }
 .columnLeft {
   display: table-cell;
@@ -86,8 +71,15 @@ body {
   padding-bottom: 20px;
 }
 
-p1 {
-  color: salmon;
+/* li span {
+  position: relative;
+  bottom: 3px;
 }
+
+li::marker{
+  font-size: 1.6em;
+  line-height: 2.0;
+} */
+
 
 

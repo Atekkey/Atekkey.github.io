@@ -88,8 +88,16 @@ body {
   padding-bottom: 20px;
 }
 
-p1 {
+colMain {
   color: salmon;
+}
+
+colCode {
+  color: #70FFC5;
+}
+
+colIdea {
+  color: #70AAFF;
 }
 
 

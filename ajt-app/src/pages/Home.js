@@ -64,9 +64,9 @@ const Home = () => {
 
             <div class="column"> </div> {/* Keep for formatting */}
             <div class="columnRight" >
-              <img src="PNGs/todo1.png" alt="Empty To-Do list" width="500" height="180"/>  <br></br> <br></br>
+              <img src="PNGs/Todo1.png" alt="Empty To-Do list" width="500" height="180"/>  <br></br> <br></br>
 
-              <img src="PNGs/todo2.png" alt="To-do list propagated with AI" width="500" height="230"/>
+              <img src="PNGs/Todo2.png" alt="To-do list propagated with AI" width="500" height="230"/>
             </div>
           </div>
 

@@ -12,7 +12,6 @@
   animation: gradientShift 28s ease-out infinite;
 
   text-align: center;
-  color: #fafafa;
 
 }
 
@@ -28,16 +27,24 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 750;
   background-color: #1a1a1a;
+  color: #cacaca;
 
 }
 
+.app-header {
+  background-color: #1a1a1a;
+  
+  padding: 20px;
+  font-size: 1.2em;
+  font-weight: 550;
+}
 
 .resumebox {
 
   display: flex;
 
   background-color: #fafafa20;
-  outline: 2px solid #1a1a1a;
+  outline: 0.3vw solid #1a1a1a;
 
   border-radius: 10px;
   margin: auto;
@@ -52,43 +59,13 @@ body {
   
 }
 
-img {
-  outline: 2px solid #1a1a1a;
+img:not([alt="UIUC Logo"]) {
+  outline: 0.3vw solid #1a1a1aff;
   border-radius: 10px;
 }
 
 
-.link {
-  color: #white;
-}
 
-
-.section1 {
-  padding-top: 35px;
-  font-size: 1.6em;
-  height: 100%;
-  font-family: "Georgia", sans-serif;
-}
-
-.midsection1 {
-  /* background: linear-gradient(#6184D8, #EE6C4D); */
-  height: 100%;
-  padding-top: 30px;
-  font-family: "Georgia", sans-serif;
-}
-
-.section2 {
-  /* background-color: grey; */
-  height: 100%;
-  font-family: "Georgia", sans-serif;
-  padding-bottom: 35px;
-}
-.section3 {
-  padding-top: 35px;
-  height: 100%;
-  font-family: "Georgia", sans-serif;
-  color: #E6E6E6 ;
-}
 
 
 .container {

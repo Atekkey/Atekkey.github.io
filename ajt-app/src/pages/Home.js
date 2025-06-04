@@ -13,6 +13,10 @@ const Home = () => {
         </div>
 
         <div class="column">
+            <img src="PNGs/anandFace.JPG" alt="Anand Tekkey" width = "auto" height = "100"  />
+        </div>
+
+        <div class="column">
             <div className="resumebox">
                     <Link to="/Resume" className="link" >Resume </Link>
             </div>

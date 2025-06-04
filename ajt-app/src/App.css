@@ -1,13 +1,31 @@
-.App {
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.homebg {
+  height: 100vh;   width: 100vw;
+
+  background: linear-gradient(35deg, #5e0297, #01132d, #013f2f, #06933e);
+  background-size: 400% 400%;
+  animation: gradientShift 28s ease-out infinite;
+
   text-align: center;
   color: #fafafa;
-  background-color: #1a1a1a;
 
 }
 
 
+.App {
+  text-align: center;
+  color: #fafafa;
+  background-color: #1a1a1a;
+}
+
+
 body {
-  font-family: "Georgia", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 750;
   background-color: #1a1a1a;
 
@@ -15,17 +33,33 @@ body {
 
 
 .resumebox {
-  background-color: #fafafa;
-  color: #1a1a1a;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: 10px;
+
+  display: flex;
+
+  background-color: #fafafa20;
+  outline: 2px solid #1a1a1a;
+
   border-radius: 10px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+
+  width: 10vw;
+  height: 10vw;
+  font-size: 1.8vw;
+
+  
+  align-items: center;
+  justify-content: center;
+  
 }
 
+img {
+  outline: 2px solid #1a1a1a;
+  border-radius: 10px;
+}
+
+
 .link {
-  color: #1a1a1a;
+  color: #white;
 }
 
 
@@ -56,15 +90,18 @@ body {
   color: #E6E6E6 ;
 }
 
+
 .container {
   display: table;
   width: 100%;
   padding-top: 20px;
 }
+
 .column {
   display: table-cell;
   vertical-align: middle;
 }
+
 .columnLeft {
   display: table-cell;
   padding-left: 16px;
@@ -88,8 +125,20 @@ body {
   padding-bottom: 20px;
 }
 
+mainHead {
+  font-size: 3vw;
+}
+
 colMain {
   color: salmon;
+}
+
+colName {
+  color: rgb(87, 137, 253);
+}
+
+doubleFont {
+  font-size: 1.5em;
 }
 
 colCode {

@@ -169,7 +169,7 @@ const Portfolio = () => {
             onClick={() => scrollToSection('about')}
             className="cta-button"
           >
-            Get Started
+            More About Me
           </button>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Github, Linkedin, Mail, ExternalLink, Code, User, Briefcase, MessageCircle, Home } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail, Code, User, Briefcase, MessageCircle, Home } from 'lucide-react';
+// ExternalLink
 import '../App3.css';
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,40 +34,46 @@ const Portfolio = () => {
 
   const projects = [
     {
-      title: "AI-Powered To-Do List",
-      description: "A React-based to-do list with ChatGPT API integration for intelligent task formatting and contextual information extraction",
-      tech: ["React", "JavaScript", "OpenAI API", "JSON"],
+      title: "Mailbot",
+      description: "Arduino IoT device that performs OCR text scanning on package labels and messages users through the Slack API",
+      tech: ["Python", "OpenCV", "Arduino", "Slack API"],
       link: "#",
-      github: "https://github.com/ATekkey"
+      github: "https://github.com/Atekkey/Mailbot"
     },
     {
-      title: "VOS Computer Vision Research",
-      description: "Memory architecture optimization research contributing to 6% accuracy boost in leading VOS model",
-      tech: ["Python", "PyTorch", "Deep Learning", "Slurm"],
+      title: "AI-Powered To-Do List",
+      description: "React-based to-do list with ChatGPT API integration for intelligent task formatting and contextual information extraction",
+      tech: ["React", "JavaScript", "OpenAI API", "JSON"],
       link: "#",
-      github: "https://github.com/ATekkey"
+      github: "https://github.com/Atekkey/AI-Todo-List"
     },
     {
       title: "Minesweeper Clone",
-      description: "Object-oriented Python implementation with automated solving using BFS and pyAutoGUI",
+      description: "Object-oriented Python implementation with automated chording using BFS and pyAutoGUI",
       tech: ["Python", "pyAutoGUI", "BFS", "OOP"],
       link: "#",
-      github: "https://github.com/ATekkey"
+      github: "https://github.com/Atekkey/Minesweeper"
     }
   ];
 
   const experiences = [
     {
-      title: "Research Assistant",
-      company: "VOS Computer Vision Research - UIUC",
+      title: "Computer Vision Research Assistant",
+      company: "Schwing Research",
       period: "August 2024 - Present",
-      description: "Explored memory architecture optimization, identified failure cases, and introduced back-propagation contributing to 6% accuracy boost. Leveraged Slurm for PyTorch job scheduling on NCSA research clusters."
+      description: "Identified failure cases and explored memory architecture optimization in the leading VOS model. Introduced back-propagation contributing to 6% accuracy boost on datasets. Leveraged Slurm for PyTorch job scheduling on NCSA research clusters."
+    },
+    {
+      title: "President",
+      company: "Triangle Engineering Brotherhood",
+      period: "May 2025 - December 2025",
+      description: "Oversaw chapter operations, budget management, and professional development programming for 80+ engineering students. Presided over all organizational meetings and proceedings, ensuring orderly conduct and effective decision-making across executive board sessions, and chapter meetings."
     },
     {
       title: "Social Director",
       company: "Triangle Engineering Brotherhood",
       period: "January 2024 - June 2025",
-      description: "Oversaw $5,000 budget organizing 12 successful social events. Supervised team of 17 chairs ensuring seamless event planning and coordination."
+      description: "Managed a budget of $5,000 to organize 12 successful social events. Supervised team of 17 chairs ensuring seamless event planning and coordination."
     },
     {
       title: "Volunteer Tutor",
@@ -146,10 +153,10 @@ const Portfolio = () => {
           <div className="hero-text">
             <h1 className="hero-title">Anand</h1>
             <p className="hero-subtitle">
-              Computer Science Student & AI Research Assistant
+              ML Research Assistant & Leader
             </p>
             <p className="hero-description">
-              UIUC CS student specializing in AI/ML, computer vision research, and full-stack development. Building the future with code and innovation.
+              UIUC CS student specializing in AI/ML, Computer Vision Research, and full-stack development.
             </p>
           </div>
           
@@ -180,11 +187,12 @@ const Portfolio = () => {
           <h2 className="section-title">About Me</h2>
           <div className="about-grid">
             <div className="about-text">
-              <h3 className="about-heading">Computer Science at UIUC</h3>
+              <h3 className="about-heading">Anand "AJ" Tekkey</h3>
               <p className="about-description">
-                I'm a Computer Science student at the University of Illinois at Urbana-Champaign with a 3.98 GPA, 
-                specializing in AI/ML and computer vision research. Currently working as a Research Assistant in the 
-                VOS Computer Vision lab, contributing to cutting-edge memory architecture optimization research.
+                I'm a Computer Science student at the University of Illinois at Urbana-Champaign with a 3.98 GPA. 
+                I am currently working as a Research Assistant under Alexander Schwing, contributing to cutting-edge memory architecture optimization research.
+                <br></br>
+                When I'm not coding, I’m usually with my saxophone, at the gym, or on the volleyball court.
               </p>
               <div className="skills-grid">
                 <div className="skill-card">
@@ -250,10 +258,10 @@ const Portfolio = () => {
                     ))}
                   </div>
                   <div className="project-links">
-                    <a href={project.link} className="project-link demo">
+                    {/* <a href={project.link} className="project-link demo">
                       <ExternalLink size={16} />
                       Live Demo
-                    </a>
+                    </a> */}
                     <a href={project.github} className="project-link code">
                       <Github size={16} />
                       Code

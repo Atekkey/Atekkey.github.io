@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Github, Linkedin, Mail, Code, User, Briefcase, MessageCircle, Home } from 'lucide-react';
-// ExternalLink
+import { ExternalLink, Menu, X, Github, Linkedin, Mail, Code, User, Briefcase, MessageCircle, Home } from 'lucide-react';
+
 import '../App3.css';
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,6 +34,13 @@ const Portfolio = () => {
 
   const projects = [
     {
+      title: "CourtRank",
+      description: "Fullstack webapp for ranking and reviewing volleyball courts using React Native, and Firestore",
+      tech: ["React Native", "Typescript", "Python", "Firestore"],
+      link: "https://c.tekkey.net",
+      github: "https://github.com/Atekkey/CourtRank"
+    },
+    {
       title: "Mailbot",
       description: "Arduino IoT device that performs OCR text scanning on package labels and messages users through the Slack API",
       tech: ["Python", "OpenCV", "Arduino", "Slack API"],
@@ -60,7 +67,7 @@ const Portfolio = () => {
     {
       title: "Computer Vision Research Assistant",
       company: "Schwing Research",
-      period: "August 2024 - Present",
+      period: "August 2024 - August 2025",
       description: "Identified failure cases and explored memory architecture optimization in the leading VOS model. Introduced back-propagation contributing to 6% accuracy boost on datasets. Leveraged Slurm for PyTorch job scheduling on NCSA research clusters."
     },
     {
@@ -190,7 +197,7 @@ const Portfolio = () => {
               <h3 className="about-heading">Anand "AJ" Tekkey</h3>
               <p className="about-description">
                 I'm a Computer Science student at the University of Illinois at Urbana-Champaign with a 3.98 GPA. 
-                I am currently working as a Research Assistant under Alexander Schwing, contributing to cutting-edge memory architecture optimization research.
+                Up till August I was working as a Research Assistant under Alexander Schwing, contributing to cutting-edge memory architecture optimization research.
                 <br></br>
                 When I'm not coding, I’m usually with my saxophone, at the gym, or on the volleyball court.
               </p>
@@ -258,10 +265,10 @@ const Portfolio = () => {
                     ))}
                   </div>
                   <div className="project-links">
-                    {/* <a href={project.link} className="project-link demo">
-                      <ExternalLink size={16} />
-                      Live Demo
-                    </a> */}
+                      {(project.link !== "#") && <a href={project.link} className="project-link demo">
+                        <ExternalLink size={16} />
+                        See Project
+                      </a>}
                     <a href={project.github} className="project-link code">
                       <Github size={16} />
                       Code

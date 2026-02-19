@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ExternalLink, Menu, X, Github, Linkedin, Mail, Code, User, Briefcase, MessageCircle, Home } from 'lucide-react';
+import { ExternalLink, Menu, X, Github, Linkedin, Mail, Code, User, Briefcase, MessageCircle, Home, FileText } from 'lucide-react';
 
 import '../App3.css';
 const Portfolio = () => {
@@ -20,7 +20,8 @@ const Portfolio = () => {
     { id: 'about', label: 'About', icon: User },
     { id: 'projects', label: 'Projects', icon: Code },
     { id: 'experience', label: 'Experience', icon: Briefcase },
-    { id: 'contact', label: 'Contact', icon: MessageCircle }
+    { id: 'contact', label: 'Contact', icon: MessageCircle },
+    { id: 'resume', label: 'Resume', icon: FileText, isLink: true, href: '/Resume' }
   ];
 
   const scrollToSection = (sectionId) => {
@@ -48,6 +49,13 @@ const Portfolio = () => {
       github: "https://github.com/Atekkey/Mailbot"
     },
     {
+      title: "BusBlinker",
+      description: "Arduino-based LED bus sign with real-time data display and dynamic content updates",
+      tech: [ "Python", "APIs", "Real-time Data", "LED Matrix"],
+      link: "#",
+      github: "https://github.com/Atekkey/BusBlinker"
+    },
+    {
       title: "AI-Powered To-Do List",
       description: "React-based to-do list with ChatGPT API integration for intelligent task formatting and contextual information extraction",
       tech: ["React", "JavaScript", "OpenAI API", "JSON"],
@@ -71,13 +79,13 @@ const Portfolio = () => {
       description: "Identified failure cases and explored memory architecture optimization in the leading VOS model. Introduced back-propagation contributing to 6% accuracy boost on datasets. Leveraged Slurm for PyTorch job scheduling on NCSA research clusters."
     },
     {
-      title: "President",
+      title: "President, Senior Advisor",
       company: "Triangle Engineering Brotherhood",
-      period: "May 2025 - December 2025",
+      period: "May 2025 - May 2026",
       description: "Oversaw chapter operations, budget management, and professional development programming for 80+ engineering students. Presided over all organizational meetings and proceedings, ensuring orderly conduct and effective decision-making across executive board sessions, and chapter meetings."
     },
     {
-      title: "Social Director",
+      title: "Social Director, Social Chair",
       company: "Triangle Engineering Brotherhood",
       period: "January 2024 - June 2025",
       description: "Managed a budget of $5,000 to organize 12 successful social events. Supervised team of 17 chairs ensuring seamless event planning and coordination."
@@ -106,6 +114,18 @@ const Portfolio = () => {
               <div className="nav-links">
                 {navItems.map((item) => {
                   const Icon = item.icon;
+                  if (item.isLink) {
+                    return (
+                      <a
+                        key={item.id}
+                        href={item.href}
+                        className="nav-link"
+                      >
+                        <Icon size={16} />
+                        <span>{item.label}</span>
+                      </a>
+                    );
+                  }
                   return (
                     <button
                       key={item.id}
@@ -138,6 +158,18 @@ const Portfolio = () => {
             <div className="mobile-nav-content">
               {navItems.map((item) => {
                 const Icon = item.icon;
+                if (item.isLink) {
+                  return (
+                    <a
+                      key={item.id}
+                      href={item.href}
+                      className="mobile-nav-link"
+                    >
+                      <Icon size={18} />
+                      <span>{item.label}</span>
+                    </a>
+                  );
+                }
                 return (
                   <button
                     key={item.id}
@@ -160,10 +192,10 @@ const Portfolio = () => {
           <div className="hero-text">
             <h1 className="hero-title">Anand</h1>
             <p className="hero-subtitle">
-              ML Research Assistant & Leader
+              Fullstack Developer & Leader
             </p>
             <p className="hero-description">
-              UIUC CS student specializing in AI/ML, Computer Vision Research, and full-stack development.
+              UIUC CS student specializing in full-stack development alongside AI/ML and Computer Vision.
             </p>
           </div>
           
@@ -196,19 +228,20 @@ const Portfolio = () => {
             <div className="about-text">
               <h3 className="about-heading">Anand "AJ" Tekkey</h3>
               <p className="about-description">
-                I'm a Computer Science student at the University of Illinois at Urbana-Champaign with a 3.98 GPA. 
-                Up till August I was working as a Research Assistant under Alexander Schwing, contributing to cutting-edge memory architecture optimization research.
+                I'm a Computer Science student at the University of Illinois at Urbana-Champaign with a 3.97 GPA. 
+                From August '24 to August '25 I was working as a Research Assistant under Alexander Schwing, contributing to cutting-edge memory architecture optimization research.
+                Since then, I've done multiple fullstack projects for fun, and to learn new technologies.
                 <br></br>
-                When I'm not coding, I’m usually with my saxophone, at the gym, or on the volleyball court.
+                When I'm not coding, I’m usually watching Law & Order, working out, or playing Volleyball with friends.
               </p>
               <div className="skills-grid">
                 <div className="skill-card">
                   <h4 className="skill-title frontend">Languages</h4>
-                  <p className="skill-text">Python, C/C++, Java, JavaScript</p>
+                  <p className="skill-text">Python, C/C++, Java, Typescript, Assembly</p>
                 </div>
                 <div className="skill-card">
                   <h4 className="skill-title backend">AI/ML</h4>
-                  <p className="skill-text">PyTorch, TensorFlow, OpenAI API</p>
+                  <p className="skill-text">PyTorch, TensorFlow, OpenAI API, OpenCV</p>
                 </div>
                 <div className="skill-card">
                   <h4 className="skill-title database">Research</h4>
@@ -216,7 +249,7 @@ const Portfolio = () => {
                 </div>
                 <div className="skill-card">
                   <h4 className="skill-title tools">Tools</h4>
-                  <p className="skill-text">Git, Slurm, VS Code, UE5</p>
+                  <p className="skill-text">Git, Bash, Slurm, VS Code, UE5</p>
                 </div>
               </div>
             </div>
@@ -229,7 +262,7 @@ const Portfolio = () => {
                 <p className="card-text">Let's build innovative solutions together</p>
                 <div className="achievements">
                   <div className="achievement">
-                    <strong>3.98 GPA</strong>
+                    <strong>3.97 GPA</strong>
                     <span>UIUC Computer Science</span>
                   </div>
                   <div className="achievement">
